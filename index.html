@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <title>SHAKA</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="css/style.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="poster-wrap">
+      <div
+        class="poster"
+        role="img"
+    
+      >
+        <div
+          class="bg-grid"
+          aria-hidden="true"
+        ></div>
+
+        <div class="hero">
+          <video
+            class="bg-video"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source
+              src="./video/background-video.mp4"
+              type="video/mp4"
+            />
+            Tu navegador no soporta video HTML5.
+          </video>
+
+          <div class="figure">
+            <img
+              src="img/sasuke.png"
+              alt="Sasuke character"
+            />
+          </div>
+
+          <!-- <div class="panel">
+            <div
+              class="sun"
+              aria-hidden="true"
+            ></div>
+            <div
+              class="wireframe"
+              aria-hidden="true"
+            ></div>
+          </div> -->
+          <div class="mangekyo spin">
+            <img src="./img/mangekyo.png" alt="Mangekyo Sharingan" width="90" style="filter: grayscale(0.3) contrast(1.1) brightness(0.8);"/>
+          </div>
+        </div>
+
+        <div class="lower">
+          <div class="title-block">
+            <!-- <h1 class="ghost">
+              SHAKA
+              <span
+                class="mask"
+                aria-hidden="true"
+              ></span>
+            </h1>-->
+            <div
+              class="glitch"
+              style="font-family: 'geek';"
+              data-text="SACRIFICE"
+              
+            >
+              SACRIFICE
+            </div>
+            <div class="scanlines"></div>
+            <div class="subtitle"  >LOVE BREEDS SACRIFICE, WHICH IN TURN BREEDS HATRED</div>
+
+            <div class="foot">
+              <div class="copy">“Even if doesn’t alter or change the end result in the slightest, making decisions based on convictions that you believe in and walking your own path has its own merit and worth. There’s something to be said for not having… even one regret.”
+</div>
+             <div class="barcode" aria-hidden="true"><img src="./img/uchiha.png" alt="uchiha" style="
+    height: 40px;
+    filter: grayscale(0.1) contrast(1.1) brightness(0.7);
+"><img src="./img/uchiha.png" alt="uchiha" style="
+    height: 40px;
+    filter: grayscale(0.1) contrast(1.1) brightness(0.7);
+"><img src="./img/uchiha.png" alt="uchiha" style="
+    height: 40px;
+    filter: grayscale(0.1) contrast(1.1) brightness(0.7);
+"><img src="./img/uchiha.png" alt="uchiha" style="
+    height: 40px;
+    filter: grayscale(0.1) contrast(1.1) brightness(0.7);
+"></div>
+            </div>
+          </div>
+
+          <div class="meta">
+            <div class="badge"><span style="font-size: 12px">NAME:</span><span class="gun">SHAKA</span><span style="font-size: 12px">COUNTRY:</span><span class="gun">UNKNOWN</span><span style="font-size: 12px">PROMISE:</span><a href="https://xat.me/lucy"><span class="gun">LUCY</span></a></div>
+            <div class="thumb">
+              <img src="./img/amaterasu.gif" alt="detalle">
+            </div>
+            <!-- <div style="font-size: 12px; color: var(--muted)">3.1415926535 • 09879823</div> -->
+          </div>
+        </div>
+
+        <div class="corner-mark"> <h1
+      class="neon"
+     
+    >
+      恐れ知らず
+    </h1>
+
+      </div>
+    </div>
+
+     <script>
+        
+         window.addEventListener("mousedown", playMP3);
+         let sound = new Audio("./music/invasion.mp3");
+         function playMP3(e) {
+           e.preventDefault();
+           sound.play();
+         }
+
+	      document.addEventListener('contextmenu', event => event.preventDefault());
+      </script>
+  </body>
+</html>
